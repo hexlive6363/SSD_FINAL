@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet Sentiment Analysis</title>
+    <style>
+        body {
+            background-color: #a3cfb4;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #2c6e49;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #2c6e49;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #1f5b3e;
+        }
+        .container {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #2c6e49;
+            border-radius: 10px;
+            max-width: 600px;
+            background-color: #dff3e4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gif {
+            width: 250px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PREDICTION:</h1>
+        {% if data == 0 %}
+            <h1>SAD</h1>
+            <img src="static/sad.jpg" width="300" height="200">
+        {% else %}
+            <h1>HAPPY :)</h1>
+            <img src="static/happy.jpg" width="300" height="200">
+        {% endif %}
+        <br><br>
+        <a href='/'>Go Back to Home Page</a>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        .container {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container img {
+            width: 300px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tweet Analysis - Prediction</h1>
+
+    <div class="container">
+        {% if data == 0 %}
+            <h1>SAD</h1>
+            <img src="static/sad.jpg" alt="Sad">
+        {% else %}
+            <h1>HAPPY</h1>
+            <img src="static/happy.jpg" alt="Happy">
+        {% endif %}
+        <br><br>
+        <a href="/">Go Back to Home Page</a>
+    </div>
+</body>
+</html>

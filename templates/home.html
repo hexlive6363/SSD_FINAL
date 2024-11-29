@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet Analysis</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        .form-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .form-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .slider {
+            width: 200%;
+            margin: 100px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            animation: slide 15s infinite;
+        }
+
+        .slides img {
+            width: 16.6667%;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            16% { transform: translateX(-16.6667%); }
+            33% { transform: translateX(-33.3333%); }
+            50% { transform: translateX(-50%); }
+            66% { transform: translateX(-66.6667%); }
+            83% { transform: translateX(-83.3333%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tweet Analysis</h1>
+
+    <div class="form-container">
+        <form method="POST" action="{{url_for('home')}}">
+            <input type="text" name="a" placeholder="Enter a sentence for prediction" required>
+            <input type="submit" value="Predict!">
+        </form>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="static/ROC.jpg" alt="Graph 1">
+            <img src="static/precision_recall_curbve.jpg" alt="Graph 2">
+            <img src="static/learning_curve.jpg" alt="Graph 3">
+            <img src="static/distribution_curve.jpg" alt="Graph 4">
+            <img src="static/confusion_matrix.jpg" alt="Graph 5">
+            <img src="static/class_distribution.jpg" alt="Graph 6">
+        </div>
+    </div>
+</body>
+</html>

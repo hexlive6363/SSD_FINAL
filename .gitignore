@@ -1,0 +1,6 @@
+/venv
+/node/module
+/env/*
+!/env/.keep
+secret.txt
+config.json
