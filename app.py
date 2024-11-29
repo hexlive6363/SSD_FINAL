@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the model and vectorizer from the pickle file
-model, vectorizer = pickle.load(open('LATEST_NOV.pkl', 'rb'))
+model, vectorizer = pickle.load(open('Lates.pkl', 'rb'))
 
 # Check the loaded objects
 print(f"Model type: {type(model)}")
